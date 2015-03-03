@@ -1,2 +1,2 @@
-# in-todays-story
+![he-man.jpg](src/he-man.jpg)
 In today's story...
