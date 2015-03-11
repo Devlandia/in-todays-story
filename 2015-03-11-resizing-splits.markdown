@@ -9,7 +9,7 @@ categories: [vim]
 
 _by [@fellipebrito](https://github.com/fellipebrito)_
 
-One of the things I most like in VIM is the use way to split its environment. Using VIM splits + [ctrlP](https://github.com/kien/ctrlp.vim) + [tMux](http://en.wikipedia.org/wiki/Tmux) makes me a lot more productive.
+One of the things I most like in VIM is the easy way to split its environment. Using VIM splits + [ctrlP](https://github.com/kien/ctrlp.vim) + [tMux](http://en.wikipedia.org/wiki/Tmux) makes me a lot more productive.
 
 Sometimes I want to read a manual, a helper, a README, or even just want to read my code in 'full screen'. This is how I do it:
 
