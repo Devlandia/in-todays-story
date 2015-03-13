@@ -1,4 +1,12 @@
-# Flux
+---
+layout: post
+title: "What is Flux"
+date: 2015-03-03 16:00:00 -0300
+comments: true
+author: Pedro Martos
+categories: [flux]
+---
+
 _by [@pedromartos](https://github.com/pedromartos)_
 
 This is just a summary of the article [Flux For Stupid People](http://blog.andrewray.me/flux-for-stupid-people/) that I wrote to help me understand better how Flux works.
