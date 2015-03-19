@@ -16,20 +16,16 @@ I like to use the term "I'm in the matrix" when I'm coding. Because this is how 
 There are so many steps - mouse interactions and keystrokes - in the whole process I described above that if I only try to make a simple math ( ( keystrokes + mouse clicks ) * 20 ) I will start to get mad at me! It is A LOT of time lost, and as once Bruce Lee said:
 >_"If you love life, don't waste time, for time is what life is made up of."_
 
-###
-what-bothers-me.markdown
+### what-bothers-me.markdown
 
 I've seen some folks that have this practice of creating a simple markdown file somewhere so they can keep a track of everything that bothers them but is not a "must to be fixed now" thing. I like this practice, so I have an alias on my VIM that opens this file for me with two keystrokes. It was in this file that I saved the quote _"I hate to use the mouse to copy text from vim and then alt-tab to Chrome every time I want to look for something"_. It was there, saved as a small thorn in my finger. Every time I went through this process I felt the pain. Two days ago I watched 25% of a youtube video where the developer had an idea for his emacs. So before I finish watching, I thought: "Ok, I will try to fix this issue myself, and later on I come back to see how he did it". So here we go.
 
-###
-tl;dr?! - Ok, code starts here...
+### tl;dr?! - Ok, code starts here...
 
-####
-Expect
+#### Expect
 First of all, you must have expect installed in your unix. _"OH, come on, you do not know what is expect?"_. Dude, go for it here: [Using Expect Scripts to Automate Tasks](http://www.admin-magazine.com/Articles/Automating-with-Expect-Scripts)
 
-####
-Automate SSH access to your computer from vagrant
+#### Automate SSH access to your computer from vagrant
 My personal computer is dumb. It does not have GitHub keys, Ruby, MySQL or any other "dev stuff". The only tool this computer has is a vagrant box (or some boxes). There, inside my vagrant is where I'm happy. The problem is that this vagrant box does not have access to my browser, file preview and other apps that I use.
 
 My plan was simple: I'd like to **yank a text on vim, execute few keystrokes and then an automated script would open my browser and search for this text in google**.
@@ -67,8 +63,7 @@ You can copy/download/modify it and then move into your /bin/<file_name>.sh dire
 -rwxr-xr-x 1 root 259 Mar 18 19:21 /bin/browser_search.sh*
 ```
 
-####
-Vim alias - how to copy yanked lines in VIM's command line
+#### Vim alias - how to copy yanked lines in VIM's command line
 
 Now that I have this script I have one more challenge, I want to yank a text and with two or three keystrokes send it to the terminal?
 
