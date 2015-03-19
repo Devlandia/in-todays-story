@@ -79,3 +79,4 @@ Here the `map <Leader>bs ` is defining my keystroke.
 
 It works very well, and my plan in the future is to improve it so I can search not only on Google but define if I want to search directly in one specific place.
 
+[![ScreenShot](http://gifyu.com/images/dynamic-browser-search.gif)](http://gifyu.com/images/dynamic-browser-search.gif)
