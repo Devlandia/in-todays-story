@@ -45,11 +45,13 @@ Fork it and change its name or just download the master branch inside your own r
 Assuming that you already have a github repository ready for your project. Everything begins with the `gulpfile.js`.  
 Here you will write all the tasks for your project.
 
+```js
     var gulp = require('gulp');
 
     gulp.task('foobar', function(){
       console.log("\n\nHELLO WORLD!!!\n\n");
     });
+```
 
 Now, in your terminal just enter:
 
@@ -60,6 +62,7 @@ For you guys who are not familiar with NPM packages the `require('gulp')` line w
 
 Let's kick it up a notch. What if you want to write your stylesheets in **SASS**? Tough? Please.
 
+```js
     var gulp   = require('gulp'),
         concat = require('gulp-concat'),
         sass   = require('gulp-sass');
@@ -70,6 +73,7 @@ Let's kick it up a notch. What if you want to write your stylesheets in **SASS**
           .pipe(concat('./main.css'))
           .pipe(gulp.dest('./build/css'));
     });
+```
 
 Gulp use a concept of streams running through pipes. So our stream is `gulp.src('./src/css/**/*.scss')` which is all .scss files in `./src/css/` folder and subfolders.  
 Next we will take the stream and run it through the SASS pipe, and compress each of them `.pipe(sass( { style: 'compressed' } ))`  
@@ -83,6 +87,7 @@ Aaaaand it's done. You will have all your SASS files compiled, compressed and co
 
 And what about **CoffeeScript**? Same.
 
+```js
     var gulp   = require('gulp'),
         concat = require('gulp-concat'),
         uglify = require('gulp-uglify'),
@@ -95,6 +100,7 @@ And what about **CoffeeScript**? Same.
           .pipe(concat('./main.js'))
           .pipe(gulp.dest('./build/js'));
     });
+```
 
 > Here we added the pipe **uglify** to compress our JS code
 
@@ -103,6 +109,7 @@ How about serving these files? Sure.
 
 Gulp can use a bunch of packages to serve files. So far my favorite is **[BrowserSync](http://www.browsersync.io/)**
 
+```js
     var gulp        = require('gulp'),
         browserSync = require('browser-sync');
 
@@ -114,6 +121,7 @@ Gulp can use a bunch of packages to serve files. So far my favorite is **[Browse
         }
       });
     });
+```
 
 Then in your terminal
 
@@ -139,10 +147,12 @@ Remember when we create the `server` task and we made the server to watch some f
 
 We just need to create another task that will watch our files on `./src/`. And it goes like this:
 
+```js
     gulp.task('watch', function() {
       gulp.watch('./src/css/**/*.scss', ['sass']);
       gulp.watch('./src/js/**/*.coffee', ['scripts']);
     });
+```
 
 Then we update our `default` task to:
 
@@ -158,6 +168,7 @@ Feel free to look into the [gulpfile.js](https://github.com/Devlandia/gulp2ghpag
 
 Oh, yeah. Almost forgot about that. Very simple. We just create another task.
 
+```js
     var gulp    = require('gulp'),
         ghPages = require('gulp-gh-pages');
 
@@ -165,6 +176,7 @@ Oh, yeah. Almost forgot about that. Very simple. We just create another task.
       return gulp.src('./build/**/*')
                 .pipe(ghPages());
     });
+```
 
 This `deploy` task will take all files inside `./build/` and deploy them to a gh-pages branch of your repository when you run the task in your terminal
 
