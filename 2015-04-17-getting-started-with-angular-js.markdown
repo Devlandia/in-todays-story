@@ -63,3 +63,16 @@ Outros examplos:
     <p>200 / 5 = {{ 200 / 5 }}</p>
   </div>
 ```
+
+#### Filters
+
+Nesse framework, filtros são uma forma de formatar os dados que serão exibidos aos usuários. Para utiliza-los basta usar o caractere `|`(pipe) e passr o filtro desejado. Por exemplo:
+
+```html
+  <div ng-app="">
+    {{ "Hello " + " World !!!" | uppercase }}
+  </div>
+```
+
+Mais alguns exemplos:
+
