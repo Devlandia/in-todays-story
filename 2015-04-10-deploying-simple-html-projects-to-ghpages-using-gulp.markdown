@@ -56,7 +56,7 @@ Now, in your terminal just enter:
     $ gulp foobar
 
 And BAM. The magic happens.  
-For you guys who are not familiar with NPM packages the `require('gulp')` line we are just requiring a package that we installed. Usually this is made via `package.json` file. When you have this file on your folder just run `npm install` and he will install all dependencies that are listed there. See and example [here](https://github.com/Devlandia/gulp2ghpages/blob/master/package.json) and read more about it [here](https://docs.npmjs.com/files/package.json)
+For you guys who are not familiar with NPM packages the `require('gulp')` line we are just requiring a package that we installed. Usually this is made via `package.json` file. When you have this file on your folder just run `npm install` and he will install all dependencies that are listed there. See an example [here](https://github.com/Devlandia/gulp2ghpages/blob/master/package.json) and read more about it [here](https://docs.npmjs.com/files/package.json)
 
 Let's kick it up a notch. What if you want to write your stylesheets in **SASS**? Tough? Please.
 
@@ -120,7 +120,7 @@ Then in your terminal
     $ gulp server
 
 This will start the server on port 3000.  
-Observe that in the line `files: ['./build/js/*.js', './build/css/*.css', './build/*.html']` **BrowserSync** will keep an eye on these files so in case they change the server will automatically reload them.
+Observe the line `files: ['./build/js/*.js', './build/css/*.css', './build/*.html']`, it tells **BrowserSync** to keep an eye on these files, so in case they change, the server will automatically reload them.
 
 But this only starts the server, you still need to compile and copy all files to the `./build` folder.
 
@@ -128,7 +128,7 @@ But this only starts the server, you still need to compile and copy all files to
 
 ![what-if-i-told-you](http://i.imgur.com/XOCkn7k.jpg)
 
-We can create tasks that can execute others tasks in a row. So let's take the tasks we created before and put them together under another task
+We can create tasks that can execute others tasks in a row. So let's take the tasks we've created before and put them together under another task
 
     gulp.task('default', ['sass', 'scripts', 'server']);
 
